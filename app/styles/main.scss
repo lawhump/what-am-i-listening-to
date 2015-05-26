@@ -1,0 +1,132 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+  background: -webkit-linear-gradient(90deg, #232526 10%, #414345 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #232526 10%, #414345 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #232526 10%, #414345 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #232526 10%, #414345 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #232526 10%, #414345 90%); /* W3C */
+}
+
+.header {
+    text-align: center;
+    font-family: 'Walter Turncoat', cursive;
+    color: #fff;
+}
+
+.result {
+    font-family: 'Kreon', serif;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    background: url(../images/greyzz_@2X.png);
+    
+    .container {
+        position: relative;
+        display: block;
+        width: 75vw;
+        margin: 0 auto;    
+    }
+    
+    .row {
+        text-align: center;
+        
+        /*
+        &:after {
+            content: '';
+            width: 100%;
+            display: inline-block;
+            font-size: 0;
+            line-height: 0    
+        }
+        */
+        
+        div {
+            display: inline-block;
+            text-align: center;
+            margin: 5px 0.5vw;
+            height: auto;
+            vertical-align: top;
+            display: inline-block;
+        }
+        
+        .left {
+            text-align: center;
+            background-color: white;
+
+            img {
+                padding: 7px;    
+            }
+            
+            .title {
+                color: #287326;    
+            }
+        }
+
+        .right {            
+            h3 {
+                display: inline-block;
+                margin: 0.5em 1em;
+                padding: 5px;
+                cursor: pointer;
+            }
+
+            ol {
+                color: #287326;
+                text-align: left;
+                margin-top: 1.4em;
+            }
+            
+            li {
+                color: #000;
+                line-height: 1.4;
+                letter-spacing: 0.15em;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    div.result {
+        .container {
+            width: 90vw;    
+        }
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    div.result {
+        .row {
+            div {
+                margin: 5px 3vw;    
+            }
+        }
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}

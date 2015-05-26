@@ -1,0 +1,25 @@
+<div class="header">
+    <h1>Currently Enjoying</h1>
+</div>
+
+<div class="result">
+    <div class="container">
+        <div class="row">
+            <div class="left">
+                <img src="{{url}}">
+                <h3 class="title">{{MRTname}} - {{MRTartist}}</h3>
+            </div>
+            <div class="right">
+                <h3 ng-click='setPeriod("7day")'>Week</h3>
+                <h3 ng-click='setPeriod("3month")'>3 Months</h3>
+                <h3 ng-click='setPeriod("6month")'>6 Months</h3>
+                <h3 ng-click='setPeriod("12month")'>Year</h3>
+                <h3 ng-click='setPeriod("overall")'>All Time</h3>
+
+                <ol>
+                    <li ng-repeat="track in topTracks">{{track.name}} -  {{track.artist.name}}</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
